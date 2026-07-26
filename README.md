@@ -6,6 +6,7 @@ Vue 3 component library / UI workshop, built with Vite and documented with Story
 
 - [Vue 3](https://vuejs.org/) + [Vite](https://vite.dev/)
 - [Storybook](https://storybook.js.org/) for component documentation and visual development
+- [Tailwind CSS](https://tailwindcss.com/) as the CSS engine (see [docs/tailwindcss.md](docs/tailwindcss.md))
 - [Vitest](https://vitest.dev/) for unit tests, [Playwright](https://playwright.dev/) for e2e tests
 - [ESLint](https://eslint.org/) + [oxlint](https://oxc.rs/docs/guide/usage/linter.html) + [Prettier](https://prettier.io/) for linting/formatting
 - [pnpm](https://pnpm.io/) as package manager (pinned via `packageManager` in `package.json`)
@@ -47,6 +48,10 @@ pnpm dev
 - **CI** ([.github/workflows/ci.yml](.github/workflows/ci.yml)) runs lint, unit tests, the Vite build, and the Storybook build on every push/PR to `main`, plus a non-blocking `pnpm audit`.
 - **Dependency updates** are proposed weekly by Dependabot ([.github/dependabot.yml](.github/dependabot.yml)) for npm packages, GitHub Actions, and dev container features.
 - **Secrets**: never commit `.env` files — they're gitignored by default. Use `.env.example` to document required variables without real values.
+
+## Documentation
+
+- [Tailwind CSS installation and configuration](docs/tailwindcss.md)
 
 ## Recommended IDE Setup
 
