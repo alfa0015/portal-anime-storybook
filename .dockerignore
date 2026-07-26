@@ -1,0 +1,46 @@
+# Version control
+.git
+.github
+
+# Dependencies / package manager cache
+node_modules
+.pnpm-store
+
+# Editor / IDE
+.vscode
+.idea
+.devcontainer
+.editorconfig
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+dist
+dist-ssr
+storybook-static
+coverage
+test-results
+playwright-report
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+.DS_Store
+*.local
+.eslintcache
+
+# Git hooks (not needed inside the image)
+.husky
+
+Dockerfile
+.dockerignore
+README.md
