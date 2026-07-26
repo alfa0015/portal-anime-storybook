@@ -7,6 +7,7 @@ Vue 3 component library / UI workshop, built with Vite and documented with Story
 - [Vue 3](https://vuejs.org/) + [Vite](https://vite.dev/)
 - [Storybook](https://storybook.js.org/) for component documentation and visual development
 - [Tailwind CSS](https://tailwindcss.com/) as the CSS engine (see [docs/tailwindcss.md](docs/tailwindcss.md))
+- [shadcn-vue](https://www.shadcn-vue.com/) for UI components (see [docs/shadcn-vue.md](docs/shadcn-vue.md))
 - [Vitest](https://vitest.dev/) for unit tests, [Playwright](https://playwright.dev/) for e2e tests
 - [ESLint](https://eslint.org/) + [oxlint](https://oxc.rs/docs/guide/usage/linter.html) + [Prettier](https://prettier.io/) for linting/formatting
 - [pnpm](https://pnpm.io/) as package manager (pinned via `packageManager` in `package.json`)
@@ -52,6 +53,7 @@ pnpm dev
 ## Documentation
 
 - [Tailwind CSS installation and configuration](docs/tailwindcss.md)
+- [shadcn-vue installation and how to add components](docs/shadcn-vue.md)
 
 ## Recommended IDE Setup
 

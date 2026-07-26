@@ -6,7 +6,8 @@
       "Bash(timeout 60 pnpm build-storybook)",
       "WebFetch(domain:pnpm.io)",
       "Bash(docker build *)",
-      "Bash(docker rmi *)"
+      "Bash(docker rmi *)",
+      "WebFetch(domain:www.shadcn-vue.com)"
     ]
   }
 }

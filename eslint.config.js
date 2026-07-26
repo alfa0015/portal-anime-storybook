@@ -26,6 +26,14 @@ export default defineConfig([
   js.configs.recommended,
   ...pluginVue.configs['flat/essential'],
   {
+    // shadcn-vue generates single-word component names (Button, Card, Input...);
+    // these files are vendored by the CLI and shouldn't be renamed.
+    files: ['src/components/ui/**/*.vue'],
+    rules: {
+      'vue/multi-word-component-names': 'off',
+    },
+  },
+  {
     ...pluginPlaywright.configs['flat/recommended'],
     files: ['e2e/**/*.{test,spec}.{js,ts,jsx,tsx}'],
   },
