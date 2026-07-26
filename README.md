@@ -50,8 +50,13 @@ pnpm dev
 - **Dependency updates** are proposed weekly by Dependabot ([.github/dependabot.yml](.github/dependabot.yml)) for npm packages, GitHub Actions, and dev container features.
 - **Secrets**: never commit `.env` files — they're gitignored by default. Use `.env.example` to document required variables without real values.
 
+## Changelog
+
+See [`CHANGELOG.md`](CHANGELOG.md) for version history and [`CHANGELOG/CHANGELOG-0.1.0.md`](CHANGELOG/CHANGELOG-0.1.0.md) for the complete feature inventory (9 phases, 100+ components).
+
 ## Documentation
 
+- [Design system plan (living doc — phases, components, PR tracking)](docs/design-system-plan.md)
 - [Tailwind CSS installation and configuration](docs/tailwindcss.md)
 - [shadcn-vue installation and how to add components](docs/shadcn-vue.md)
 

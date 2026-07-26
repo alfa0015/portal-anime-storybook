@@ -49,3 +49,8 @@ storybook-static
 .env
 .env.*
 !.env.example
+
+.agents/*
+.claude/*
+skills-lock.json
+CLAUDE.md
