@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(timeout 60 pnpm build)",
+      "Bash(timeout 60 pnpm build-storybook)",
+      "WebFetch(domain:pnpm.io)",
+      "Bash(docker build *)",
+      "Bash(docker rmi *)"
+    ]
+  }
+}
