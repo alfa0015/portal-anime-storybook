@@ -1,5 +1,6 @@
 allowBuilds:
   esbuild: false
+  vue-demi: false
 
 engineStrict: true
 saveExact: true
