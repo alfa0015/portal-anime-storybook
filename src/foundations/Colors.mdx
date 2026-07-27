@@ -1,0 +1,227 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks'
+
+<Meta title="Foundations/Colors" />
+
+# Color Palette
+
+Color palette of the design system. Inspired by Netflix, Crunchyroll, Apple TV+ — dark-first, poster-driven. Each color has a semantic role: use tokens, never hardcode colors.
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    subtitle="Brand purple — CTAs, focus ring"
+    colors={{ light: 'hsl(263 70% 60%)', dark: 'hsl(263 70% 60%)' }}
+  />
+  <ColorItem
+    title="Accent"
+    subtitle="Bright blue — links, highlights"
+    colors={{ light: 'hsl(210 100% 50%)', dark: 'hsl(210 100% 50%)' }}
+  />
+  <ColorItem
+    title="Destructive"
+    subtitle="Error red — alerts, dangerous actions"
+    colors={{ light: 'hsl(0 85% 60%)', dark: 'hsl(0 70% 50%)' }}
+  />
+  <ColorItem
+    title="Background"
+    subtitle="Main surface"
+    colors={{ light: 'hsl(210 20% 98%)', dark: 'hsl(240 15% 8%)' }}
+  />
+  <ColorItem
+    title="Foreground"
+    subtitle="Text color"
+    colors={{ light: 'hsl(240 10% 10%)', dark: 'hsl(210 20% 98%)' }}
+  />
+  <ColorItem
+    title="Muted"
+    subtitle="Secondary backgrounds, disabled states"
+    colors={{ light: 'hsl(220 15% 95%)', dark: 'hsl(240 10% 18%)' }}
+  />
+  <ColorItem
+    title="Border"
+    subtitle="Dividers, input borders"
+    colors={{ light: 'hsl(220 13% 91%)', dark: 'hsl(240 10% 18%)' }}
+  />
+</ColorPalette>
+
+# Usage Proportion
+
+80% Neutral (backgrounds, borders, text), 15% Primary (CTAs, focus), 4% Accent (details), 1% Destructive (errors only).
+
+<div className="flex flex-col gap-8 my-6">
+  <div className="flex-1">
+    <div className="flex gap-1 h-12 rounded-lg overflow-hidden">
+      <div className="flex-[80] bg-muted"></div>
+      <div className="flex-[15] bg-primary"></div>
+      <div className="flex-[4] bg-accent"></div>
+      <div className="flex-[1] bg-destructive"></div>
+    </div>
+    <p className="text-sm text-muted-foreground mt-2 sb-unstyled">Light mode</p>
+  </div>
+
+  <div className="flex-1 dark bg-background p-6 rounded-lg">
+    <div className="flex gap-1 h-12 rounded-lg overflow-hidden">
+      <div className="flex-[80] bg-muted"></div>
+      <div className="flex-[15] bg-primary"></div>
+      <div className="flex-[4] bg-accent"></div>
+      <div className="flex-[1] bg-destructive"></div>
+    </div>
+    <p className="text-sm text-white mt-2 sb-unstyled">Dark mode</p>
+  </div>
+</div>
+
+# Color Shades
+
+Tones derived from Primary (purple), for visual reference. Components use the base token; shades document tone coherence.
+
+<div className="space-y-6">
+  <div>
+    <h4 className="text-sm font-semibold mb-3">Primary shades</h4>
+    <div className="flex gap-2">
+      <div className="w-12 h-12 rounded-lg" style={{ backgroundColor: 'hsl(263 70% 20%)' }}></div>
+      <div className="w-12 h-12 rounded-lg" style={{ backgroundColor: 'hsl(263 70% 35%)' }}></div>
+      <div className="w-12 h-12 rounded-lg" style={{ backgroundColor: 'hsl(263 70% 50%)' }}></div>
+      <div className="w-12 h-12 rounded-lg" style={{ backgroundColor: 'hsl(263 70% 60%)' }}></div>
+      <div className="w-12 h-12 rounded-lg" style={{ backgroundColor: 'hsl(263 70% 75%)' }}></div>
+      <div className="w-12 h-12 rounded-lg" style={{ backgroundColor: 'hsl(263 70% 90%)' }}></div>
+    </div>
+  </div>
+
+  <div>
+    <h4 className="text-sm font-semibold mb-3">Accent shades</h4>
+    <div className="flex gap-2">
+      <div className="w-12 h-12 rounded-lg" style={{ backgroundColor: 'hsl(210 100% 20%)' }}></div>
+      <div className="w-12 h-12 rounded-lg" style={{ backgroundColor: 'hsl(210 100% 35%)' }}></div>
+      <div className="w-12 h-12 rounded-lg" style={{ backgroundColor: 'hsl(210 100% 45%)' }}></div>
+      <div className="w-12 h-12 rounded-lg" style={{ backgroundColor: 'hsl(210 100% 50%)' }}></div>
+      <div className="w-12 h-12 rounded-lg" style={{ backgroundColor: 'hsl(210 100% 65%)' }}></div>
+      <div className="w-12 h-12 rounded-lg" style={{ backgroundColor: 'hsl(210 100% 80%)' }}></div>
+    </div>
+  </div>
+</div>
+
+# Color Contrast Suggestions
+
+For each shade, the real contrast ratio was calculated (WCAG relative luminance formula) against white and black text, showing the option with better contrast. Levels: **AAA** ≥ 7:1, **AA** ≥ 4.5:1, **AA Large** ≥ 3:1 (large/bold text only).
+
+<div className="space-y-8">
+  <div>
+    <h4 className="text-sm font-semibold mb-3 sb-unstyled">Primary contrast</h4>
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+      <div className="rounded-lg overflow-hidden border border-border">
+        <div className="h-16 flex items-center justify-center" style={{ backgroundColor: 'hsl(263 70% 20%)' }}>
+          <span className="text-lg font-semibold sb-unstyled" style={{ color: 'white' }}>Aa</span>
+        </div>
+        <div className="p-2 bg-card">
+          <p className="text-xs font-mono sb-unstyled">#2B0F57</p>
+          <p className="text-xs text-muted-foreground sb-unstyled">White · AAA (16.0:1)</p>
+        </div>
+      </div>
+      <div className="rounded-lg overflow-hidden border border-border">
+        <div className="h-16 flex items-center justify-center" style={{ backgroundColor: 'hsl(263 70% 35%)' }}>
+          <span className="text-lg font-semibold sb-unstyled" style={{ color: 'white' }}>Aa</span>
+        </div>
+        <div className="p-2 bg-card">
+          <p className="text-xs font-mono sb-unstyled">#4B1B98</p>
+          <p className="text-xs text-muted-foreground sb-unstyled">White · AAA (11.0:1)</p>
+        </div>
+      </div>
+      <div className="rounded-lg overflow-hidden border border-border">
+        <div className="h-16 flex items-center justify-center" style={{ backgroundColor: 'hsl(263 70% 50%)' }}>
+          <span className="text-lg font-semibold sb-unstyled" style={{ color: 'white' }}>Aa</span>
+        </div>
+        <div className="p-2 bg-card">
+          <p className="text-xs font-mono sb-unstyled">#6B26D9</p>
+          <p className="text-xs text-muted-foreground sb-unstyled">White · AAA (7.2:1)</p>
+        </div>
+      </div>
+      <div className="rounded-lg overflow-hidden border border-border">
+        <div className="h-16 flex items-center justify-center" style={{ backgroundColor: 'hsl(263 70% 60%)' }}>
+          <span className="text-lg font-semibold sb-unstyled" style={{ color: 'white' }}>Aa</span>
+        </div>
+        <div className="p-2 bg-card">
+          <p className="text-xs font-mono sb-unstyled">#8852E0</p>
+          <p className="text-xs text-muted-foreground sb-unstyled">White · AA (4.9:1)</p>
+        </div>
+      </div>
+      <div className="rounded-lg overflow-hidden border border-border">
+        <div className="h-16 flex items-center justify-center" style={{ backgroundColor: 'hsl(263 70% 75%)' }}>
+          <span className="text-lg font-semibold sb-unstyled" style={{ color: 'black' }}>Aa</span>
+        </div>
+        <div className="p-2 bg-card">
+          <p className="text-xs font-mono sb-unstyled">#B593EC</p>
+          <p className="text-xs text-muted-foreground sb-unstyled">Black · AAA (8.4:1)</p>
+        </div>
+      </div>
+      <div className="rounded-lg overflow-hidden border border-border">
+        <div className="h-16 flex items-center justify-center" style={{ backgroundColor: 'hsl(263 70% 90%)' }}>
+          <span className="text-lg font-semibold sb-unstyled" style={{ color: 'black' }}>Aa</span>
+        </div>
+        <div className="p-2 bg-card">
+          <p className="text-xs font-mono sb-unstyled">#E1D4F7</p>
+          <p className="text-xs text-muted-foreground sb-unstyled">Black · AAA (15.0:1)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h4 className="text-sm font-semibold mb-3 sb-unstyled">Accent contrast</h4>
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+      <div className="rounded-lg overflow-hidden border border-border">
+        <div className="h-16 flex items-center justify-center" style={{ backgroundColor: 'hsl(210 100% 20%)' }}>
+          <span className="text-lg font-semibold sb-unstyled" style={{ color: 'white' }}>Aa</span>
+        </div>
+        <div className="p-2 bg-card">
+          <p className="text-xs font-mono sb-unstyled">#003366</p>
+          <p className="text-xs text-muted-foreground sb-unstyled">White · AAA (12.6:1)</p>
+        </div>
+      </div>
+      <div className="rounded-lg overflow-hidden border border-border">
+        <div className="h-16 flex items-center justify-center" style={{ backgroundColor: 'hsl(210 100% 35%)' }}>
+          <span className="text-lg font-semibold sb-unstyled" style={{ color: 'white' }}>Aa</span>
+        </div>
+        <div className="p-2 bg-card">
+          <p className="text-xs font-mono sb-unstyled">#0059B3</p>
+          <p className="text-xs text-muted-foreground sb-unstyled">White · AA (6.8:1)</p>
+        </div>
+      </div>
+      <div className="rounded-lg overflow-hidden border border-border">
+        <div className="h-16 flex items-center justify-center" style={{ backgroundColor: 'hsl(210 100% 45%)' }}>
+          <span className="text-lg font-semibold sb-unstyled" style={{ color: 'black' }}>Aa</span>
+        </div>
+        <div className="p-2 bg-card">
+          <p className="text-xs font-mono sb-unstyled">#0073E6</p>
+          <p className="text-xs text-muted-foreground sb-unstyled">Black · AA (4.6:1)</p>
+        </div>
+      </div>
+      <div className="rounded-lg overflow-hidden border border-border">
+        <div className="h-16 flex items-center justify-center" style={{ backgroundColor: 'hsl(210 100% 50%)' }}>
+          <span className="text-lg font-semibold sb-unstyled" style={{ color: 'black' }}>Aa</span>
+        </div>
+        <div className="p-2 bg-card">
+          <p className="text-xs font-mono sb-unstyled">#0080FF</p>
+          <p className="text-xs text-muted-foreground sb-unstyled">Black · AA (5.5:1)</p>
+        </div>
+      </div>
+      <div className="rounded-lg overflow-hidden border border-border">
+        <div className="h-16 flex items-center justify-center" style={{ backgroundColor: 'hsl(210 100% 65%)' }}>
+          <span className="text-lg font-semibold sb-unstyled" style={{ color: 'black' }}>Aa</span>
+        </div>
+        <div className="p-2 bg-card">
+          <p className="text-xs font-mono sb-unstyled">#4DA6FF</p>
+          <p className="text-xs text-muted-foreground sb-unstyled">Black · AAA (8.2:1)</p>
+        </div>
+      </div>
+      <div className="rounded-lg overflow-hidden border border-border">
+        <div className="h-16 flex items-center justify-center" style={{ backgroundColor: 'hsl(210 100% 80%)' }}>
+          <span className="text-lg font-semibold sb-unstyled" style={{ color: 'black' }}>Aa</span>
+        </div>
+        <div className="p-2 bg-card">
+          <p className="text-xs font-mono sb-unstyled">#99CCFF</p>
+          <p className="text-xs text-muted-foreground sb-unstyled">Black · AAA (12.4:1)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

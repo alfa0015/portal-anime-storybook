@@ -45,25 +45,40 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --radius: 0.75rem;
+  --text-display-lg: 57px;
+  --text-display-md: 45px;
+  --text-display-sm: 36px;
+  --text-headline-lg: 32px;
+  --text-headline-md: 28px;
+  --text-headline-sm: 24px;
+  --text-title-lg: 22px;
+  --text-title-md: 16px;
+  --text-title-sm: 14px;
+  --text-body-lg: 16px;
+  --text-body-md: 14px;
+  --text-body-sm: 12px;
+  --text-label-lg: 14px;
+  --text-label-md: 12px;
+  --text-label-sm: 11px;
+  --background: hsl(210 20% 98%);
+  --foreground: hsl(240 10% 10%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(240 10% 10%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(240 10% 10%);
+  --primary: hsl(263 70% 60%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(240 10% 18%);
+  --secondary-foreground: hsl(240 10% 10%);
+  --muted: hsl(220 15% 95%);
+  --muted-foreground: hsl(240 5% 45%);
+  --accent: hsl(210 100% 50%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 85% 60%);
+  --border: hsl(220 13% 91%);
+  --input: hsl(220 13% 91%);
+  --ring: hsl(263 70% 60%);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -80,24 +95,24 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --background: hsl(240 15% 8%);
+  --foreground: hsl(210 20% 98%);
+  --card: hsl(240 12% 12%);
+  --card-foreground: hsl(210 20% 98%);
+  --popover: hsl(240 12% 10%);
+  --popover-foreground: hsl(210 20% 98%);
+  --primary: hsl(263 70% 60%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(240 10% 18%);
+  --secondary-foreground: hsl(210 20% 98%);
+  --muted: hsl(240 10% 18%);
+  --muted-foreground: hsl(240 5% 65%);
+  --accent: hsl(210 100% 50%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 70% 50%);
+  --border: hsl(240 10% 18%);
+  --input: hsl(240 10% 18%);
+  --ring: hsl(263 70% 60%);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -111,6 +126,52 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+@utility text-display-lg {
+  font-size: var(--text-display-lg);
+}
+@utility text-display-md {
+  font-size: var(--text-display-md);
+}
+@utility text-display-sm {
+  font-size: var(--text-display-sm);
+}
+@utility text-headline-lg {
+  font-size: var(--text-headline-lg);
+}
+@utility text-headline-md {
+  font-size: var(--text-headline-md);
+}
+@utility text-headline-sm {
+  font-size: var(--text-headline-sm);
+}
+@utility text-title-lg {
+  font-size: var(--text-title-lg);
+}
+@utility text-title-md {
+  font-size: var(--text-title-md);
+}
+@utility text-title-sm {
+  font-size: var(--text-title-sm);
+}
+@utility text-body-lg {
+  font-size: var(--text-body-lg);
+}
+@utility text-body-md {
+  font-size: var(--text-body-md);
+}
+@utility text-body-sm {
+  font-size: var(--text-body-sm);
+}
+@utility text-label-lg {
+  font-size: var(--text-label-lg);
+}
+@utility text-label-md {
+  font-size: var(--text-label-md);
+}
+@utility text-label-sm {
+  font-size: var(--text-label-sm);
 }
 
 @layer base {

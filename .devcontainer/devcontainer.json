@@ -34,7 +34,8 @@
         "esbenp.prettier-vscode",
         "eamodio.gitlens",
         "ms-azuretools.vscode-docker",
-        "Vue.volar"
+        "Vue.volar",
+        "unifiedjs.vscode-mdx"
       ],
       "settings": {
         "editor.formatOnSave": true,
