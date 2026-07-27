@@ -518,21 +518,21 @@ Build the 5 new leaf components first (FilterBar, EmptyState, ChapterListItem, W
 
 **PR breakdown** (each leaves `build-storybook` green). Update the Status column as you open/merge each PR (`—` → `#<num> open` → `#<num> ✅`):
 
-| PR  | Content                                                                                                                                          | Size                     | Status |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ | ------ |
-| 1   | Phase 1: HSL tokens + 5 Foundations MDX                                                                                                          | S (highest review value) | —      |
-| 2   | Phase 2: addon-themes, storySort, Overview MDX (Intro, Principles, Accessibility, Changelog), Button → `UI/Button` with full docs standard (2.3) | S                        | —      |
-| 3   | Phase 3 Batch A + stories                                                                                                                        | M                        | —      |
-| 4   | Phase 3 Batches B+C + stories, a11y → `error`                                                                                                    | M                        | —      |
-| 5   | Phase 4 steps 1–8 + `src/mocks/media.js`                                                                                                         | L                        | —      |
-| 6   | Phase 4 steps 9–14 (detail + shell)                                                                                                              | M                        | —      |
-| 7   | Phase 5 steps 1–7 (feed + comments)                                                                                                              | M                        | —      |
-| 8   | Phase 5 steps 8–11 + ThreadPage pattern                                                                                                          | M                        | —      |
-| 9   | Phase 6 + delete HelloWorld                                                                                                                      | S                        | —      |
-| 10a | Phase 7: playback core (useVideoPlayer, controls, SeekBar, quality, buffering, resume)                                                           | L                        | —      |
-| 10b | Phase 7: cast/AirPlay/MediaSession + DownloadButton UI                                                                                           | M                        | —      |
-| 11  | Phase 8: complete reader (RTL, modes, preload, PDF, offline)                                                                                     | L                        | —      |
-| 12  | Phase 9: new leaf components + page stories                                                                                                      | L                        | —      |
+| PR  | Content                                                                                                                                          | Size                     | Status                                                                              |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ | ----------------------------------------------------------------------------------- |
+| 1   | Phase 1: HSL tokens + 5 Foundations MDX                                                                                                          | S (highest review value) | #1 open (Colors ✅, Typography ✅, pending: SpacingRadius, ShadowsGradients, Icons) |
+| 2   | Phase 2: addon-themes, storySort, Overview MDX (Intro, Principles, Accessibility, Changelog), Button → `UI/Button` with full docs standard (2.3) | S                        | —                                                                                   |
+| 3   | Phase 3 Batch A + stories                                                                                                                        | M                        | —                                                                                   |
+| 4   | Phase 3 Batches B+C + stories, a11y → `error`                                                                                                    | M                        | —                                                                                   |
+| 5   | Phase 4 steps 1–8 + `src/mocks/media.js`                                                                                                         | L                        | —                                                                                   |
+| 6   | Phase 4 steps 9–14 (detail + shell)                                                                                                              | M                        | —                                                                                   |
+| 7   | Phase 5 steps 1–7 (feed + comments)                                                                                                              | M                        | —                                                                                   |
+| 8   | Phase 5 steps 8–11 + ThreadPage pattern                                                                                                          | M                        | —                                                                                   |
+| 9   | Phase 6 + delete HelloWorld                                                                                                                      | S                        | —                                                                                   |
+| 10a | Phase 7: playback core (useVideoPlayer, controls, SeekBar, quality, buffering, resume)                                                           | L                        | —                                                                                   |
+| 10b | Phase 7: cast/AirPlay/MediaSession + DownloadButton UI                                                                                           | M                        | —                                                                                   |
+| 11  | Phase 8: complete reader (RTL, modes, preload, PDF, offline)                                                                                     | L                        | —                                                                                   |
+| 12  | Phase 9: new leaf components + page stories                                                                                                      | L                        | —                                                                                   |
 
 **New dependencies by phase**: `marked dompurify` (Phase 5), `hls.js` (Phase 7), `pdfjs-dist` (Phase 8). Cast/AirPlay carry no npm package (script-tag + native APIs).
 
