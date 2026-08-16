@@ -43,7 +43,8 @@
               "content": "Paleta de colores del sistema de diseño — dark-first, inspirada en Netflix, Crunchyroll y Apple TV+. Cada color tiene un rol semántico: usa los tokens, nunca colores fijos.",
               "lineHeight": 1.3,
               "fontFamily": "Inter",
-              "fontSize": 24
+              "fontSize": 24,
+              "fontWeight": "normal"
             }
           ]
         },
@@ -96,7 +97,8 @@
                       "content": "Púrpura de marca — CTAs, focus ring",
                       "lineHeight": 1.3,
                       "fontFamily": "Inter",
-                      "fontSize": 15
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -239,7 +241,8 @@
                       "content": "Azul brillante — links, highlights",
                       "lineHeight": 1.3,
                       "fontFamily": "Inter",
-                      "fontSize": 15
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -382,7 +385,8 @@
                       "content": "Rojo de error — alertas, acciones peligrosas",
                       "lineHeight": 1.3,
                       "fontFamily": "Inter",
-                      "fontSize": 15
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -525,7 +529,8 @@
                       "content": "Superficie principal",
                       "lineHeight": 1.3,
                       "fontFamily": "Inter",
-                      "fontSize": 15
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -677,7 +682,8 @@
                       "content": "Color de texto",
                       "lineHeight": 1.3,
                       "fontFamily": "Inter",
-                      "fontSize": 15
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -820,7 +826,8 @@
                       "content": "Fondos secundarios, estados deshabilitados",
                       "lineHeight": 1.3,
                       "fontFamily": "Inter",
-                      "fontSize": 15
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -963,7 +970,8 @@
                       "content": "Divisores, bordes de inputs",
                       "lineHeight": 1.3,
                       "fontFamily": "Inter",
-                      "fontSize": 15
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -1106,7 +1114,8 @@
                       "content": "80% Neutral · 15% Primary · 4% Accent · 1% Destructive",
                       "lineHeight": 1.3,
                       "fontFamily": "Inter",
-                      "fontSize": 15
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -1307,7 +1316,8 @@
               "content": "80% Neutral (fondos, bordes, texto) · 15% Primary (CTAs, focus) · 4% Accent (detalles) · 1% Destructive (solo errores).",
               "lineHeight": 1.3,
               "fontFamily": "Inter",
-              "fontSize": 18
+              "fontSize": 18,
+              "fontWeight": "normal"
             }
           ]
         },
@@ -1609,7 +1619,8 @@
               "content": "Tonos derivados de Primary y Accent, como referencia visual. Los componentes usan el token base; los shades documentan la coherencia tonal.",
               "lineHeight": 1.3,
               "fontFamily": "Inter",
-              "fontSize": 18
+              "fontSize": 18,
+              "fontWeight": "normal"
             }
           ]
         },
@@ -2107,7 +2118,8 @@
               "content": "Ratio de contraste real (fórmula WCAG) contra texto blanco y negro, mostrando la mejor opción. Niveles: AAA ≥ 7:1 · AA ≥ 4.5:1 · AA Large ≥ 3:1 (texto grande/bold).",
               "lineHeight": 1.3,
               "fontFamily": "Inter",
-              "fontSize": 18
+              "fontSize": 18,
+              "fontWeight": "normal"
             }
           ]
         },
@@ -3854,6 +3866,605 @@
                       ]
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "n6eSm5",
+      "x": 4120,
+      "y": 0,
+      "name": "Accordion Component - Full Page",
+      "clip": true,
+      "width": 1920,
+      "fill": "#111117",
+      "layout": "vertical",
+      "gap": 96,
+      "padding": 100,
+      "children": [
+        {
+          "type": "frame",
+          "id": "BjnIC",
+          "name": "Header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "Q7YmN",
+              "name": "Title",
+              "fill": "#F9FAFB",
+              "content": "Accordion",
+              "lineHeight": 1.1,
+              "fontFamily": "Inter",
+              "fontSize": 56,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "IC0qV",
+              "name": "Subtitle",
+              "fill": "#A1A1AA",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Basado en el Accordion de shadcn-vue (Reka UI) — divisores inferiores, ícono chevron que cambia al expandir y tipografía text-sm. Adaptado a los tokens de marca en modo claro y oscuro.",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hLtX8",
+          "name": "Panels",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "RFFSi",
+              "name": "Light Mode Panel",
+              "width": "fill_container",
+              "fill": "#F4F4F6",
+              "cornerRadius": 16,
+              "stroke": "#E5E7EB",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 36,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "i926I",
+                  "name": "Label",
+                  "fill": "#17171C",
+                  "content": "Light mode",
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "g1vxhb",
+                  "name": "Accordion",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "y9cXlD",
+                      "name": "Item 1",
+                      "width": "fill_container",
+                      "stroke": "#E5E7EB",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pgWP2",
+                          "name": "Trigger",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "U1y6q",
+                              "name": "Question",
+                              "fill": "#17171C",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "¿Necesito una cuenta para comentar en la comunidad?",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "ux0Cc",
+                              "name": "Chevron",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "chevron-down",
+                              "library": "lucide",
+                              "fill": "#6D6D78"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LnFyt",
+                      "name": "Item 2",
+                      "width": "fill_container",
+                      "stroke": "#E5E7EB",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "N0U2tp",
+                          "name": "Trigger",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Y9S7lF",
+                              "name": "Question",
+                              "fill": "#17171C",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "¿Cómo se sincroniza mi progreso entre dispositivos?",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "U8I1BV",
+                              "name": "Chevron",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "chevron-up",
+                              "library": "lucide",
+                              "fill": "#6D6D78"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "WHOn0",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            16,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PoTOg",
+                              "name": "Answer",
+                              "fill": "#6D6D78",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Tu progreso de reproducción y lectura se guarda en la nube automáticamente y está disponible en cualquier dispositivo donde inicies sesión con tu cuenta.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wamNp",
+                      "name": "Item 3",
+                      "opacity": 0.5,
+                      "width": "fill_container",
+                      "stroke": "#E5E7EB",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "QUhtU",
+                          "name": "Trigger",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "iLOdc",
+                              "name": "Question",
+                              "fill": "#17171C",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Cancelar notificaciones por episodio (solo plan Pro)",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "RiaN2",
+                              "name": "Chevron",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "chevron-down",
+                              "library": "lucide",
+                              "fill": "#6D6D78"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Rz4GN",
+                      "name": "Item 4",
+                      "width": "fill_container",
+                      "stroke": "#E5E7EB",
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "jFwa7",
+                          "name": "Trigger",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "mXy88",
+                              "name": "Question",
+                              "fill": "#17171C",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "¿Qué diferencia hay entre voto positivo y guardar en favoritos?",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "X57mmC",
+                              "name": "Chevron",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "chevron-down",
+                              "library": "lucide",
+                              "fill": "#6D6D78"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "N8pt1",
+                  "name": "Legend",
+                  "fill": "#6D6D78",
+                  "content": "1. Cerrado  ·  2. Abierto (expandido)  ·  3. Deshabilitado (opacity 50%)  ·  4. Cerrado (sin borde inferior)",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kBoLh",
+              "name": "Dark Mode Panel",
+              "width": "fill_container",
+              "fill": "#000000",
+              "cornerRadius": 16,
+              "stroke": "#2E2E38",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 36,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nUtlJ",
+                  "name": "Label",
+                  "fill": "#F9FAFB",
+                  "content": "Dark mode",
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "qRYwH",
+                  "name": "Accordion",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BA0oq",
+                      "name": "Item 1",
+                      "width": "fill_container",
+                      "stroke": "#292932",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HqiZD",
+                          "name": "Trigger",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "X4T4Jd",
+                              "name": "Question",
+                              "fill": "#F9FAFB",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "¿Necesito una cuenta para comentar en la comunidad?",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "sEG5z",
+                              "name": "Chevron",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "chevron-down",
+                              "library": "lucide",
+                              "fill": "#A1A1AA"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Z04Qp",
+                      "name": "Item 2",
+                      "width": "fill_container",
+                      "stroke": "#292932",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "sCQkg",
+                          "name": "Trigger",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "qH8mI",
+                              "name": "Question",
+                              "fill": "#F9FAFB",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "¿Cómo se sincroniza mi progreso entre dispositivos?",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "jbOyQ",
+                              "name": "Chevron",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "chevron-up",
+                              "library": "lucide",
+                              "fill": "#A1A1AA"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "C0H3hJ",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "padding": [
+                            0,
+                            0,
+                            16,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "J1nzg5",
+                              "name": "Answer",
+                              "fill": "#A1A1AA",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Tu progreso de reproducción y lectura se guarda en la nube automáticamente y está disponible en cualquier dispositivo donde inicies sesión con tu cuenta.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Bkr2Y",
+                      "name": "Item 3",
+                      "opacity": 0.5,
+                      "width": "fill_container",
+                      "stroke": "#292932",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "l7Q8L",
+                          "name": "Trigger",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QdLqJ",
+                              "name": "Question",
+                              "fill": "#F9FAFB",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Cancelar notificaciones por episodio (solo plan Pro)",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "vHTg6",
+                              "name": "Chevron",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "chevron-down",
+                              "library": "lucide",
+                              "fill": "#A1A1AA"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Rivxy",
+                      "name": "Item 4",
+                      "width": "fill_container",
+                      "stroke": "#292932",
+                      "strokeAlignment": "inner",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "m7v9Xa",
+                          "name": "Trigger",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "H9p2So",
+                              "name": "Question",
+                              "fill": "#F9FAFB",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "¿Qué diferencia hay entre voto positivo y guardar en favoritos?",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "iJ9GU",
+                              "name": "Chevron",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "chevron-down",
+                              "library": "lucide",
+                              "fill": "#A1A1AA"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "X9fbYx",
+                  "name": "Legend",
+                  "fill": "#A1A1AA",
+                  "content": "1. Cerrado  ·  2. Abierto (expandido)  ·  3. Deshabilitado (opacity 50%)  ·  4. Cerrado (sin borde inferior)",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             }
