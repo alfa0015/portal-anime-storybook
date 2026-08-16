@@ -3878,7 +3878,7 @@
       "id": "n6eSm5",
       "x": 4120,
       "y": 0,
-      "name": "Accordion Component - Full Page",
+      "name": "Page Componentes",
       "clip": true,
       "width": 1920,
       "fill": "#111117",
@@ -4462,6 +4462,462 @@
                   "name": "Legend",
                   "fill": "#A1A1AA",
                   "content": "1. Cerrado  ·  2. Abierto (expandido)  ·  3. Deshabilitado (opacity 50%)  ·  4. Cerrado (sin borde inferior)",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "I9tR8Q",
+          "name": "Alert Header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "Wcs0T",
+              "name": "Title",
+              "fill": "#F9FAFB",
+              "content": "Alert",
+              "lineHeight": 1.1,
+              "fontFamily": "Inter",
+              "fontSize": 56,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "E8oyQ",
+              "name": "Subtitle",
+              "fill": "#A1A1AA",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Basado en el Alert de shadcn-vue - callout con icono, titulo y descripcion opcionales. Variante default y destructive, con foco en accesibilidad (role=\"alert\").",
+              "lineHeight": 1.3,
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JVhLI",
+          "name": "Alert Panels",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "i0YJ1Q",
+              "name": "Light mode Panel",
+              "width": "fill_container",
+              "fill": "#F4F4F6",
+              "cornerRadius": 16,
+              "stroke": "#E5E7EB",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 36,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "agxS8",
+                  "name": "Label",
+                  "fill": "#17171C",
+                  "content": "Light mode",
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "tVNUg",
+                  "name": "Alert Stack",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sv8xB",
+                      "name": "default alert - circle-check-big",
+                      "width": "fill_container",
+                      "cornerRadius": 12,
+                      "stroke": "#E5E7EB",
+                      "strokeWidth": 1,
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "KV5mk",
+                          "name": "Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "circle-check-big",
+                          "library": "lucide",
+                          "fill": "#17171C"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ApIT1",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "fqCZb",
+                              "name": "Title",
+                              "fill": "#17171C",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "¡Cambios guardados!",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "text",
+                              "id": "zHt3i",
+                              "name": "Description",
+                              "fill": "#6D6D78",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Esta es una alerta con icono, titulo y descripcion.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NKpXu",
+                      "name": "default alert - party-popper",
+                      "width": "fill_container",
+                      "cornerRadius": 12,
+                      "stroke": "#E5E7EB",
+                      "strokeWidth": 1,
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "p12Y7k",
+                          "name": "Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "party-popper",
+                          "library": "lucide",
+                          "fill": "#17171C"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "YqWhW",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "G7a47",
+                              "name": "Title",
+                              "fill": "#17171C",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Esta alerta solo tiene icono y titulo, sin descripcion.",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "t32We",
+                      "name": "destructive alert - circle-alert",
+                      "width": "fill_container",
+                      "cornerRadius": 12,
+                      "stroke": "#EF444480",
+                      "strokeWidth": 1,
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "j23au",
+                          "name": "Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "circle-alert",
+                          "library": "lucide",
+                          "fill": "#DC2626"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "C3UA97",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "x3Mkrh",
+                              "name": "Title",
+                              "fill": "#DC2626",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "No se pudo procesar tu pago.",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "text",
+                              "id": "V58hG",
+                              "name": "Description",
+                              "fill": "#DC2626",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Verifica tu informacion de facturacion e intenta nuevamente.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "khZdI",
+                  "name": "Legend",
+                  "fill": "#6D6D78",
+                  "content": "Variante default (borde neutro) y destructive (borde/texto rojo). El icono es opcional; sin el, el contenido no indenta.",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "O1V3H0",
+              "name": "Dark mode Panel",
+              "width": "fill_container",
+              "fill": "#000000",
+              "cornerRadius": 16,
+              "stroke": "#2E2E38",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 36,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lbuUV",
+                  "name": "Label",
+                  "fill": "#F9FAFB",
+                  "content": "Dark mode",
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "CUUUt",
+                  "name": "Alert Stack",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "O4p6Cc",
+                      "name": "default alert - circle-check-big",
+                      "width": "fill_container",
+                      "cornerRadius": 12,
+                      "stroke": "#292932",
+                      "strokeWidth": 1,
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "KibIZ",
+                          "name": "Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "circle-check-big",
+                          "library": "lucide",
+                          "fill": "#F9FAFB"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "pH4yP",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Nscou",
+                              "name": "Title",
+                              "fill": "#F9FAFB",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "¡Cambios guardados!",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "text",
+                              "id": "N48sW",
+                              "name": "Description",
+                              "fill": "#A1A1AA",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Esta es una alerta con icono, titulo y descripcion.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MVdRt",
+                      "name": "default alert - party-popper",
+                      "width": "fill_container",
+                      "cornerRadius": 12,
+                      "stroke": "#292932",
+                      "strokeWidth": 1,
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "Trik9",
+                          "name": "Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "party-popper",
+                          "library": "lucide",
+                          "fill": "#F9FAFB"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "P3iWre",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "wSxsX",
+                              "name": "Title",
+                              "fill": "#F9FAFB",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Esta alerta solo tiene icono y titulo, sin descripcion.",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QzhQ7",
+                      "name": "destructive alert - circle-alert",
+                      "width": "fill_container",
+                      "cornerRadius": 12,
+                      "stroke": "#DC2626",
+                      "strokeWidth": 1,
+                      "gap": 12,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "iwC4W",
+                          "name": "Icon",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "circle-alert",
+                          "library": "lucide",
+                          "fill": "#F87171"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VR0n4",
+                          "name": "Content",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "BNjo9",
+                              "name": "Title",
+                              "fill": "#F87171",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "No se pudo procesar tu pago.",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "text",
+                              "id": "YrzeX",
+                              "name": "Description",
+                              "fill": "#F87171",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Verifica tu informacion de facturacion e intenta nuevamente.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "CUxXM",
+                  "name": "Legend",
+                  "fill": "#A1A1AA",
+                  "content": "Variante default (borde neutro) y destructive (borde/texto rojo). El icono es opcional; sin el, el contenido no indenta.",
                   "fontFamily": "JetBrains Mono",
                   "fontSize": 12,
                   "fontWeight": "normal"
