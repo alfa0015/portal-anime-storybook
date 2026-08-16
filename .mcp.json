@@ -13,9 +13,8 @@
       ]
     },
     "storybook": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["storybook-mcp@latest", "--port=6006"]
+      "type": "http",
+      "url": "http://localhost:6006/mcp"
     },
     "pencil": {
       "type": "stdio",
