@@ -75,7 +75,7 @@
   --muted-foreground: hsl(240 5% 45%);
   --accent: hsl(210 100% 50%);
   --accent-foreground: hsl(0 0% 100%);
-  --destructive: hsl(0 85% 60%);
+  --destructive: hsl(0 72% 45%);
   --border: hsl(220 13% 91%);
   --input: hsl(220 13% 91%);
   --ring: hsl(263 70% 60%);
@@ -109,7 +109,7 @@
   --muted-foreground: hsl(240 5% 65%);
   --accent: hsl(210 100% 50%);
   --accent-foreground: hsl(0 0% 100%);
-  --destructive: hsl(0 70% 50%);
+  --destructive: hsl(0 84% 60%);
   --border: hsl(240 10% 18%);
   --input: hsl(240 10% 18%);
   --ring: hsl(263 70% 60%);

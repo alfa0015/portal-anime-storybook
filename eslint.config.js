@@ -15,11 +15,25 @@ export default defineConfig([
     name: 'app/files-to-lint',
     files: ['**/*.{vue,js,mjs,jsx}'],
   },
-  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
+  // storybook-static is gitignored build output, but ESLint had no matching ignore,
+  // so `pnpm lint` linted the minified bundles and reported ~1190 phantom errors
+  // whenever a build had been run beforehand.
+  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**', '**/storybook-static/**']),
   {
     languageOptions: {
       globals: {
         ...globals.browser,
+      },
+    },
+  },
+  {
+    // Root config files run in Node, not the browser — they need `process`,
+    // `__dirname` and friends.
+    name: 'app/node-config-files',
+    files: ['*.config.js', '.storybook/**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
       },
     },
   },
