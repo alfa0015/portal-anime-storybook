@@ -13,5 +13,10 @@ const config = {
   core: {
     allowedHosts: true,
   },
+  features: {
+    // display-review (addon-mcp) requires this for direct MCP clients (our .mcp.json "http" entry);
+    // changeDetection defaults to true, experimentalReview is opt-in
+    experimentalReview: true,
+  },
 }
 export default config
