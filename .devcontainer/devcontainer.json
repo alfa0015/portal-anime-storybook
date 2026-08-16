@@ -14,7 +14,7 @@
       "moby": false
     }
   },
-  "runArgs": ["--cap-add=NET_ADMIN", "--cap-add=NET_RAW"],
+  "runArgs": ["--cap-add=NET_ADMIN", "--cap-add=NET_RAW", "--gpus", "all"],
   "forwardPorts": [5173, 6006],
   "portsAttributes": {
     "5173": {
@@ -35,7 +35,8 @@
         "eamodio.gitlens",
         "ms-azuretools.vscode-docker",
         "Vue.volar",
-        "unifiedjs.vscode-mdx"
+        "unifiedjs.vscode-mdx",
+        "highagency.pencildev"
       ],
       "settings": {
         "editor.formatOnSave": true,
@@ -53,6 +54,25 @@
             "path": "zsh"
           }
         }
+      },
+      "mcp.servers": {
+        "claude": {
+          "path": "/home/node/.claude/claude",
+          "args": ["--server"],
+          "env": {
+            "CLAUDE_CONFIG_DIR": "/home/node/.claude"
+          }
+        },
+        "chrome-devtools": {
+          "path": "/usr/bin/chromium",
+          "args": [
+            "--remote-debugging-port=9222",
+            "--no-sandbox",
+            "--enable-gpu",
+            "--use-gl=angle",
+            "--headless"
+          ]
+        }
       }
     }
   },
@@ -64,7 +84,9 @@
   ],
   "containerEnv": {
     "CLAUDE_CONFIG_DIR": "/home/node/.claude",
-    "HISTFILE": "/commandhistory/.zsh_history"
+    "HISTFILE": "/commandhistory/.zsh_history",
+    "NVIDIA_VISIBLE_DEVICES": "all",
+    "NVIDIA_DRIVER_CAPABILITIES": "compute,utility,graphics"
   },
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=delegated",
   "workspaceFolder": "/workspace"
